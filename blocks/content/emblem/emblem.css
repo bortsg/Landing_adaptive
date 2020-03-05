@@ -1,0 +1,358 @@
+.emblem {
+    width: 992px;
+    height: 523px;
+    margin: 102px auto 0;
+}
+
+.emblem-title {
+    width: 423px;
+    height: 131px;
+    font-size: 42px;
+    line-height: 45px;
+    text-align: left;
+    margin: 0 auto 0 35px;
+}
+
+.emblem__content {
+    width: 992px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    margin: 82px auto 0 12px;
+}
+
+.emblem__city {
+    width: 192px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.emblem__city_novgorod {
+    width: 165px;
+    height: 200px;
+    margin-left: 7px;
+}
+
+.emblem__city_rostov {
+    width: 169px;
+    height: 200px;
+}
+
+.emblem__city_tambov {
+    width: 160px;
+    height: 200px;
+}
+
+.emblem__city_elabuga {
+    width: 148px;
+    height: 200px;
+    margin-left: 7px;
+}
+
+.emblem__city_perm {
+    width: 160px;
+    height: 200px;
+}
+
+.emblem__city-title {
+    height: 49px;
+    width: 170px;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    margin: 35px auto 0 -3px;
+    color: #CCCCCC;
+}
+
+.emblem__city-title_elabuga {
+    margin-top: 35px;
+}
+
+@media screen and (min-width: 1184px) {
+       
+    .emblem {
+        width: 1194px;
+        height: 523px;
+        margin: 80px auto 0;        
+    }
+
+    .emblem__content {
+        grid-column-gap: 30px;
+        margin: 82px auto 0 10px;
+    }
+
+    .emblem-title {
+        margin: 0 auto 0 5px;
+    }
+
+    .emblem__content {
+        width: 1184px;
+    }
+
+    .emblem__city {
+        /* width: 208px; */
+        height: 226px;
+    }
+
+    .emblem__city-title {
+        margin-left: 5px;
+    }
+    
+    .emblem__city_novgorod {
+        width: 186px;
+        margin-left: -5px;
+    }
+
+    .emblem__city_rostov {
+        width: 191px;
+    }
+
+    .emblem__city_tambov {
+        width: 180px;
+    }
+
+    .emblem__city_elabuga {
+        width: 168px;
+    }
+
+    .emblem__city_perm {
+        width: 180px;
+    }
+
+    .emblem__city-title_elabuga {
+        margin-top: 35px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .emblem {
+        width: calc(100vw - 2*24px);
+        height: 871px;
+        margin: 110px auto 0;
+    }
+    
+    .emblem-title {
+        width: 440px;
+        font-size: 42px;
+        line-height: 46px;
+        margin: 0 auto 0 0;
+        text-align: left;
+    }
+    
+    .emblem__content {
+        width: calc(100vw - 2*24px);
+        display: grid;
+        grid-template-columns: 208px 208px 208px;
+        grid-template-rows: 310px 310px;
+        grid-column-gap: 48px;
+        grid-row-gap: 64px;
+        margin: 82px auto 0;
+        justify-content: center;
+    }
+    
+    .emblem__city {
+        width: 190px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+    }
+    
+    .emblem__city-title {
+        height: 49px;
+        font-size: 24px;
+        line-height: 26px;
+        text-align: center;
+        margin: 35px auto 0 auto;
+    }
+
+    .emblem__city_novgorod {
+        width: 186px;
+        height: 226px;
+    }
+
+    .emblem__city_rostov {
+        width: 190px;
+        height: 226px;
+    }
+    
+    .emblem__city_tambov {
+        width: 180px;
+        height: 226px;
+    }
+    
+    .emblem__city_elabuga {
+        width: 167px;
+        height: 226px;
+        margin-left: 10px;
+        
+    }
+           
+    .emblem__city_perm {
+        width: 180px;
+        height: 226px;
+    }
+
+    .emblem__city-title_elabuga {
+        margin-top: 33px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .emblem {
+        width: calc(100vw - 2*16px);
+        height: 1766px;
+        margin: 64px auto 0;
+    }
+    
+    .emblem-title {
+        width: 343px;
+        height: 64px;
+        font-size: 24px;
+        line-height: 26px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .emblem__content {
+        width: calc(100vw - 2*84px);
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 310px 284px 284px 284px 284px;
+        grid-gap: 56px;
+        margin: 32px auto 0;
+    }
+    
+    .emblem__city {
+        /* width: calc(100vw - 2*94px); */
+        height: 226px;
+        /* background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; */
+        margin: 0 auto;
+    }
+    
+    .emblem__city-title {
+        width: 190px;
+        height: 49px;
+        font-size: 24px;
+        line-height: 26px;
+        text-align: center;
+        margin: 35px auto 0 auto;
+    }
+
+    .emblem__city_novgorod {
+        width: 186px;
+        height: 226px;
+        /* margin: 0 67px; */
+    }
+
+    .emblem__city_rostov {
+        width: 190px;
+        height: 226px;
+    }
+    
+    .emblem__city_tambov {
+        width: 180px;
+        height: 226px;
+    }
+    
+    .emblem__city_elabuga {
+        width: 168px;
+        height: 238px;
+        margin-left: 10px;
+    }
+    
+    .emblem__city-title_elabuga {
+        margin-top: 20px;
+    }
+           
+    .emblem__city_perm {
+        width: 180px;
+        height: 226px;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .emblem {
+        width: calc(100vw - 2*16px);
+        height: 1766px;
+        margin: 64px auto 0;
+    }
+    
+    .emblem-title {
+        width: 288px;
+        height: 64px;
+        font-size: 24px;
+        line-height: 26px;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+    
+    .emblem__content {
+        width: calc(100vw - 2*16px);
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 310px 284px 284px 284px 284px;
+        grid-gap: 56px;
+        margin: 32px auto 0;
+    }
+    
+    .emblem__city {
+        /* width: calc(100vw - 2*16px); */
+        height: 226px;
+        /* background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; */
+        margin: 0 auto;
+    }
+    
+    .emblem__city-title {
+        width: 208px;
+        height: 49px;
+        font-size: 24px;
+        line-height: 26px;
+        text-align: center;
+        margin: 35px auto 0 auto;
+    }
+
+
+    .emblem__city_novgorod {
+        width: 186px;
+        height: 226px;
+    }
+
+    .emblem__city_rostov {
+        width: 190px;
+        height: 226px;
+    }
+    
+    .emblem__city_tambov {
+        width: 180px;
+        height: 226px;
+        margin-left: 5px;
+    }
+    
+    .emblem__city_elabuga {
+        width: 168px;
+        height: 226px;
+        margin-left: 10px;
+    }
+           
+    .emblem__city_perm {
+        width: 180px;
+        height: 226px;
+        margin-left: 5px;
+    }
+
+    .emblem__city-title {
+        margin: 35px auto 0 -8px;
+    }
+
+}

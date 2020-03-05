@@ -1,0 +1,714 @@
+.places{
+    display: flex;
+    flex-direction: column;
+    margin: 102px auto 0  auto;
+    justify-content: center;
+    /* height: 3278px; */
+}
+
+.places__place {
+    display: grid;
+    grid-template-columns: 440px 456px;
+    grid-template-rows:  1fr 440px;
+    /* grid-template-rows:  160px 440px; */
+    grid-template-areas: 
+    "title website"
+    "image paragraph";
+    grid-row-gap: 45px;
+    grid-column-gap: 32px;
+    margin-bottom: calc(72px + 30px);
+    justify-content: center;
+}
+
+.places__place_kurshskaya-kosa {
+    height: calc(644px - 2*15px);
+}
+
+.places__place_kolskiy {
+    height: calc(581px - 2*15px);
+}
+
+.places__place_altay {
+    height: calc(564px - 2*15px);
+}
+
+.places__place_baikal {
+    height: calc(634px - 2*15px);
+}
+
+.places__place_karelia {
+    height: calc(569px - 2*15px);
+    margin-bottom: 0px;
+}
+
+.places__place_kolskiy > .place__title {
+    /* align-self: center; */
+}
+
+.places__place_kurshskaya-kosa > .place__website {
+    align-self: end;
+    height: 60px;
+}
+
+.places__place_kurshskaya-kosa > .place__paragraph > p:last-of-type > span::before {
+    content: '\A0';
+}
+
+.places__place_kolskiy > .place__paragraph > p > span::before {
+    content: ' ';
+}
+
+.places__place_altay > .place__website {
+    align-self: center;
+}
+
+.places__place_altay > .place__paragraph > p > span::before {
+/* .places__place_altay > .place__paragraph > p > .text-slitno::before {     */
+    content: '\A0';
+}
+
+.places__place_baikal > .place__paragraph > p > span::before {
+    content: '\A0';
+}
+
+.places__place_baikal > .place__paragraph > p:last-of-type {
+    width: 100%; 
+}
+
+.places__place_karelia > .place__paragraph > p:last-of-type {
+    width: 100%; 
+    margin-top: 5px;
+}
+
+.places__place_karelia > .place__paragraph > p > span::before {
+    content: ' ';
+}
+
+.place__title {
+    grid-area: title;
+    font-size: 72px;
+    line-height: 65px;
+    font-weight: bold;  
+    align-self: end;  
+}
+
+.place__website {
+    grid-area: website;
+    color: grey;
+    align-self: end;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.place__website > p {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    margin-top: 0px;
+}
+
+.place__image {
+    grid-area: image;   
+    width: 100%;
+}
+
+.place__paragraph {
+    grid-area: paragraph;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.place__paragraph > p:first-of-type {
+    margin-top: 0;
+}
+
+.place__paragraph > p:last-of-type {
+    margin-top: 25px;
+    width: 97%; /*чтобы поместить нужный пробел*/
+    /* margin-bottom: 0; */
+}
+
+a {
+    color: white;
+}
+
+@media screen and (min-width: 1280px) {
+    .places {
+        margin: 100px auto 0  auto;
+        height: 3362px;
+    }
+    
+    .places__place {
+        grid-template-columns: 460px 484px;
+        grid-template-rows:  1fr 460px;
+        grid-row-gap: 50px;
+        grid-column-gap: 40px;
+    }
+
+    .places__place_kurshskaya-kosa {
+        height: calc(653px - 15px);
+    }
+    
+    .places__place_kolskiy {
+        height: calc(589px - 15px);
+    }
+    
+    .places__place_altay {
+        height: calc(589px - 15px);
+    }
+    
+    .places__place_baikal {
+        height: calc(654px - 15px);
+    }
+    
+    .places__place_baikal > .place__paragraph > p:first-of-type {
+        width:100%;
+    }
+
+    .places__place_karelia {
+        height: calc(589px - 15px);
+    }
+
+
+    .places__place_kurshskaya-kosa > .place__website {
+        align-self: end;
+    }
+
+    .places__place_baikal > .place__website {
+        align-self: end;
+    }
+
+    .place__website {
+        font-size: 18px;
+        line-height: 30px;        
+    }
+    
+    .place__website > p {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 0px;
+    }
+
+    .place__paragraph > p:last-of-type {
+        width: 100%; 
+    }
+
+    .places__place_kurshskaya-kosa {
+        margin-top: -8px;
+    }
+
+    .places__place_kolskiy {
+        margin-top: -20px;
+    }
+
+    .places__place_kolskiy > .place__paragraph > p > span::before {
+        content: '\2003';
+    }
+
+    .places__place_altay {
+        margin-top: -10px;
+    }
+
+    .places__place_altay > .place__paragraph > p > span::before {
+        content: ' ';
+    }
+
+    .places__place_baikal {
+        margin-top: -15px;
+    }
+
+    .places__place_karelia {
+        margin-top: -20px;
+    }
+
+    .places__place_karelia > .place__paragraph > p > span::before {
+        content: ' ';
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .places{
+        width: 720px;
+        display: flex;
+        flex-direction: column;
+        margin: 92px auto 0 auto;
+        justify-content: center;
+    }
+
+    .places__place {
+        display: grid;
+        grid-template-columns: 340px 352px;
+        grid-template-rows:  1fr 1fr;
+        grid-template-areas: 
+        "title website"
+        "image paragraph";
+        grid-row-gap: 60px;
+        grid-column-gap: 28px;
+        margin-bottom: 82px;
+        justify-content: center;
+    }
+
+     .places__place_kurshskaya-kosa {
+        height: 590px;
+    }
+
+    .places__place_kolskiy {
+        height: calc(565px - 13px);
+        margin-bottom: 72px;
+    }
+
+    .places__place_altay {
+        height: calc(510px - 13px);
+        margin-bottom: 95px;
+    }
+
+    .places__place_baikal {
+        height: calc(480px - 13px);
+        margin-top: 8px;
+    }
+
+    .places__place_karelia {
+        height: calc(512px - 13px);
+        margin-top: -20px;
+    }
+
+    .place__title {
+        grid-area: title;
+        font-size: 42px;
+        line-height: 46px;
+        font-weight: bold;
+        height: 56px;
+        width: 340px;
+        align-self: end;
+    }
+
+    .places__place_kurshskaya-kosa > .place__title {
+        width: calc(320px - 20px);
+        height: calc(112px - 2*15px);
+        margin: 0 auto 0 0;
+    }   
+    
+    .places__place_baikal > .place__title {
+        align-self: center;           
+    }
+
+    .places__place_kurshskaya-kosa > .place__website {
+        align-self: center;
+    }
+
+    .place__website {
+        grid-area: website;
+        color: grey;
+        align-self: center;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .place__website > p {
+        margin-top: 15px;
+    }
+
+    .places__place_kurshskaya-kosa > .place__website > p {
+        margin-top: 20px;
+    }
+
+    .places__place_kolskiy > .place__website > p {
+        margin-top: -25px;
+    }
+
+    .places__place_kolskiy > .place__image {
+        margin-top: -20px;
+    }
+
+    .places__place_kolskiy > .place__paragraph {
+        margin-top: -20px;
+    }
+    
+    
+    .places__place_altay > .place__title {
+        margin-top: 10px;
+    }
+
+    .places__place_altay > .place__website > p {
+        margin-top: 6px;
+    }
+
+    .places__place_altay > .place__image {
+        margin-top: -22px;
+    }
+
+    .places__place_altay > .place__paragraph > p:first-of-type {
+        margin-top: -22px;
+        width: 99%;
+    }
+
+    .places__place_altay > .place__paragraph > p:last-of-type {
+        margin-top: 30px;        
+    }
+
+    
+    .places__place_baikal > .place__paragraph {
+        margin-top: -33px;
+    }
+
+    .places__place_baikal > .place__image {
+        margin-top: -33px;
+    }
+
+    .places__place_baikal > .place__website > p {
+        margin-top: -33px;
+    }
+
+    .places__place_karelia > .place__image {
+        margin-top: -20px;
+    }
+
+    .places__place_karelia > .place__paragraph {
+        margin-top: -30px;
+    }
+
+
+
+    .place__image {
+        grid-area: image;   
+        width: 100%;
+    }
+    
+    .place__paragraph {
+        grid-area: paragraph;
+        font-size: 16px;
+        line-height: 27px;
+    }
+    
+    .place__paragraph > p:first-of-type {
+        margin-top: -10px;
+    }
+    
+    .place__paragraph > p:last-of-type {
+        margin-bottom: 0;
+        width: 100%;
+        /* margin-top: 25px; */
+    }
+    
+    .places__place_karelia > .place__paragraph > p > span::before {
+        content: '\A0';
+    }
+
+    a {
+        color: white;
+    }
+
+    .places__place_kurshskaya-kosa > .place__paragraph > p:last-of-type > span::before {
+        content: '\A0';
+    }
+
+    .places__place_kolskiy > .place__paragraph > p > span::before {
+        content: ' ';
+    }
+
+    .places__place_baikal > .place__paragraph > p > span::before {
+        content: ' ';
+    }
+
+    .places__place_kolskiy > .place__paragraph > p:first-of-type > span::before {
+        content: '\A0';
+    }
+
+    .places__place_karelia > .place__paragraph > p > span::before {
+        content: '\A0';
+    }
+
+    .places__place_karelia > .place__paragraph > p > span::after {
+        content: '\A0';
+    }
+
+
+    .line-break {
+        /* content: 'br'; */
+        display:table;
+    }
+
+    .white-space {
+        /* width: 10px; */
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .places{
+        margin-top:0;
+    }
+
+    .places__place {
+        display: inline-block;
+        margin-bottom: -5px;        
+    }
+
+    .place__title {
+        width: 343px;
+        height: 40px;
+        margin: 64px auto 0;
+        font-size: 32px;
+        line-height: 35px;        
+        letter-spacing: 0.02em;
+    }
+
+    .place__website {
+        width: 343px;
+        height: 38px;
+        margin: 10px auto 0;
+        line-height: 0.2em;
+        letter-spacing: 0.06em;    
+    }
+
+    .place__website > p {
+        margin-top: 0px;
+    }
+
+    .place__image {
+        width: 100vw;
+        margin: 10px auto 0;
+    }
+
+    .place__paragraph {
+        width: 343px;
+        font-size: 16px;
+        line-height: 27px;
+        margin: 24px auto 0 auto;
+    }
+    
+    .place__paragraph > p:last-of-type {
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+
+    .places__place_kurshskaya-kosa > .place__paragraph > p:last-of-type {
+        width: 100%;
+    }
+
+    .places__place_altay > .place__paragraph > p:last-of-type {
+        width: 100%;
+    }
+
+    .places__place_baikal > .place__paragraph > p:last-of-type {
+        width: 326px;        
+    }
+
+    .places__place_kolskiy > .place__paragraph > p:last-of-type {
+        /* width: 326px;         */
+        margin-top: 30px;
+    }
+
+    .places__place_karelia {
+        margin-top: 20px;
+    }
+
+    .white-space {
+        display:block;
+    }
+
+    .places__place_kurshskaya-kosa {
+        height: calc(989px - 7px - 15px);
+        margin-bottom: 100px;
+    }
+    
+    .places__place_kolskiy {
+        height: calc(1021px - 7px - 15px);
+    }
+
+    .places__place_kolskiy > .place__title {
+        margin-top: 30px;
+    }
+
+    .places__place_kolskiy > .place__image {
+        margin-top: 35px;
+    }
+
+    .places__place_altay {
+        height: calc(965px - 7px - 15px);
+        margin-top: 42px;
+        margin-bottom: 50px;
+    }
+
+    .places__place_altay > .place__image {
+        margin-top: 35px;
+    }
+   
+    .places__place_baikal {
+        height: calc(909px - 7px - 15px);
+        margin-top: 20px;
+    }
+
+    .places__place_baikal > .place__image {
+        margin-top: 35px;
+    }
+    
+    .places__place_karelia {
+        height: calc(959px - 7px - 15px);
+        margin-top: 90px;
+        margin-bottom: 0px;
+    }
+
+    .places__place_karelia > .place__image {
+        margin-top: 40px;
+    }
+
+    .places__place_karelia > .place__paragraph {
+        margin-top: 17px;
+    }
+
+    .places__place_karelia > .place__paragraph > p > span {
+        white-space: nowrap;
+        word-wrap: break-word;
+    }
+
+
+    .places__place_kurshskaya-kosa > .place__paragraph > p > span::before {
+        content: ' ';
+    }
+
+    .places__place_kolskiy > .place__paragraph > p:first-of-type > span::before {
+        content: ' ';
+    }
+
+    .places__place_kolskiy > .place__paragraph > p > span::before {
+        content: '\A0';
+    }
+
+    .places__place_karelia > .place__paragraph > p > span {
+        /* content: '\A0'; */
+        display: table;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .places{
+        margin-top:0;
+    }
+
+    .places__place {
+        display: inline-block;
+        margin-bottom: -5px;
+    }
+
+    .place__title {
+        width: 288px;
+        height: 40px;
+        margin: 64px auto 0;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 0.02em;
+    }
+
+    .place__website {
+        width: 288px;
+        height: 38px;
+        margin: 16px auto 0;
+        line-height: 0.1em;
+    }
+
+    .place__image {
+        width: 100%;
+        margin: 32px auto 0;
+    }
+
+    .place__paragraph {
+        width: 288px;
+        line-height: 30px;
+        margin: 24px auto 0 auto;
+    }
+
+    .place__website > p {
+        margin-top: 0px;
+    }
+
+    .places__place_kurshskaya-kosa {
+        height: calc(1158px);
+        margin-bottom: 20px;
+    }
+
+    .places__place_kurshskaya-kosa > .place__image {
+        margin-top: 10px;
+    }
+
+    .places__place_kurshskaya-kosa > .place__paragraph > p:first-of-type {
+        margin-top: -5px;
+    }
+
+    .places__place_kurshskaya-kosa > .place__paragraph > p:last-of-type {
+        width: 100%;
+    }
+
+    .places__place_kolskiy {
+        height: 1166px;
+        margin-top: 30px;
+    }
+
+    .places__place_kolskiy > .place__paragraph > p:first-of-type {
+        margin-top: -5px;
+    }
+
+    .places__place_kolskiy > .place__paragraph > p:last-of-type {
+        width: 100%;
+    }
+
+    .places__place_kolskiy > .place__title {
+        align-self: center;
+    }
+
+    .places__place_altay {
+        height: 1102px;
+        margin-top: 55px;
+    }
+
+    .places__place_altay > .place__paragraph > p:first-of-type {
+        margin-top: -10px;
+    }
+
+    .places__place_altay > .place__paragraph > p:last-of-type {
+        width: 100%;
+    }
+
+    .places__place_baikal {
+        height: 1046px;
+    }
+
+    .places__place_baikal {
+        margin-top: 50px;
+    }
+
+    .places__place_baikal > .place__paragraph > p:first-of-type {
+        margin-top: -10px;
+    }
+
+    .places__place_baikal > .place__paragraph > p:last-of-type {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .places__place_karelia {
+        height: 1110px;
+        margin-top: 55px;
+    }
+
+    .places__place_karelia > .place__paragraph > p:first-of-type {
+        margin-top: -10px;
+    }
+
+    /* .places__place_karelia > .place__paragraph > p:last-of-type {
+        margin-top: 30px;
+        width: 100%;
+    } */
+
+
+
+    .places__place_kurshskaya-kosa > .place__website {
+        align-self: end;
+    }
+
+    .places__place_baikal > .place__website {
+        align-self: end;
+    }
+
+
+}

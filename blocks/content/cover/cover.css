@@ -1,0 +1,200 @@
+.cover {
+    margin: 103px auto 0 auto;
+    background-image: url('../../../images/__cover.jpg');
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 591px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cover__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover__wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100%;    
+    background-size: cover;
+    background: black;
+    opacity: 0.3;
+}
+
+.cover__title {
+    width: 520px;
+    height: 170px;
+    font-size: 72px;
+    line-height: 78px;
+    text-align: center;
+    position: absolute;
+    top: 206px;
+    left: calc((100vw - 520px)/2);
+    margin: 0 auto;     
+}
+
+.cover__subtitle {
+    width: 382px;
+    height: 69px;
+    position: absolute;
+    left: calc((100vw - 382px)/2);
+    bottom: 46px;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 auto;    
+} 
+
+.cover > .cover__subtitle > p > span::before {
+    content: '\A0';
+}
+
+/* 
+.cover > .cover__subtitle > p > span {
+    white-space: nowrap;
+} */
+
+
+@media screen and (min-width: 1184px) {
+    .cover {
+        width: 1184px;
+        margin: 92px auto 0 auto;
+    }
+    
+    .cover__wrapper {
+        width: 1184px;
+    }
+    
+    .cover__title {
+        width: calc(1094px - 2*84px);
+        position: absolute;
+        left: calc((1184px - 1094px + 2*75px)/2 );
+        top: 274px;
+        height: 69px;
+        font-size: 72px;
+        line-height: 78px;
+    }
+
+    .cover__subtitle {
+        width: 382px;
+        bottom: 48px;
+        position: absolute;
+        left: calc((1184px - 382px)/2);
+    }
+
+    .cover > .cover__subtitle > p > span::before {
+        content: '\2003';
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .cover {
+        margin: 102px auto 0 auto;
+        width: 100vw;
+        height: 500px;
+    }
+
+    .cover__title {
+        width: 500px;
+        height: 170px;
+        font-size: 72px;
+        line-height: 78px;
+        position: absolute;
+        top: 165px;
+        left: calc((100vw - 500px)/2);
+        margin: 0 auto;     
+    }
+    
+    .cover__subtitle {
+        width: 382px;
+        height: 80px;
+        left: calc((100vw - 382px)/2);
+        bottom: 40px;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* .cover > .cover__subtitle > span::before {
+        content: '\A0';
+    } */
+
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .cover {
+        margin: 64px auto 0 auto;
+        width: 100vw;
+        height: 272px;
+    }
+
+    .cover__title {
+        width: 228px;
+        height: 72px;
+        font-size: 32px;
+        line-height: 35px;
+        position: absolute;
+        top: 104px;
+        left: calc((100vw - 228px)/2);
+        margin: 0 auto;     
+    }
+    
+    .cover__subtitle {
+        width: 280px;
+        height: 69px;
+        left: calc((100vw - 280px)/2);
+        bottom: 24px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        margin: 0px auto 0;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .cover {
+        margin: 64px auto 0 auto;
+        width: 100vw;
+        height: 216px;
+    }
+
+    .cover__title {
+        width: 228px;
+        height: 72px;
+        font-size: 32px;
+        line-height: 35px;
+        position: absolute;
+        top: 64px;
+        left: calc((100vw - 228px)/2);
+        margin: 0 auto;     
+    }
+    
+    .cover__subtitle {
+        width: 280px;
+        height: 49px;
+        left: calc((100vw - 280px)/2);        
+        bottom: 24px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        margin: 0 auto;
+    } 
+
+    .cover__subtitle > span {
+        white-space: nowrap;
+    }
+
+    /* .cover > .cover__subtitle > span::before {
+        content: ' ';
+    } */
+
+}

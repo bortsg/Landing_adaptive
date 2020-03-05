@@ -1,0 +1,314 @@
+.additional {
+    margin: 115px auto 0 auto;
+}
+
+.additional__container {
+    width: calc(100vw - 2*16px);
+    height: 280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 52px auto 0;    
+}   
+
+.additional__item {
+    position: relative;
+    border-radius: 5px;
+    width: calc((100vw - 3*10px - 2*16px)/4);
+    background-size: cover;
+}
+
+.additional__wrapper {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #000; 
+    opacity: 0.5;
+}
+
+.additional__item_buhta {
+    background-image: url(../../../images/__additional1.jpg);
+}
+
+.additional__item_shikhan {
+    background-image: url(../../../images/__additional2.jpg);
+}
+
+.additional__item_cherepovets {
+    background-image: url(../../../images/__additional3.jpg);
+}
+
+.additional__item_nikola-lenivets {
+    background-image: url(../../../images/__additional4.jpg);
+}
+
+.additional__container-heading {
+    width: 208px;
+    height: 56px;
+    position: absolute;
+    top: 30px;
+    left: 18px;
+    font-size: 24px;
+    line-height: 26px;
+    margin: 0 auto;
+}
+
+.additional__item_buhta > .additional__container-heading > span::before {
+    content: '\2003';
+}
+
+.additional__container-text {
+    /*width: calc((100vw - 3*10px - 2*16px)/4 - 2*16px); /* Нужно исправить: Текст выходит за границы своего блока, если убрать этот подсчёт то все встает на свои места */
+    width: 210px;
+    position: absolute;
+    bottom: 17px;
+    left: 18px;
+    font-size: 14px;
+    line-height: 20px;
+    margin:0 auto;
+}
+
+.additional__item_shikhan > .additional__container-text {
+    width: 200px;
+}
+
+.additional__title {
+    width: 782px;    
+    font-size: 72px;
+    line-height: 65px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 0 auto;   
+}
+
+.additional__subtitle {
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: normal;
+    text-align: center;
+    margin: 35px auto 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+    .additional__container {
+        width: 1184px;
+        height: 330px;
+        grid-column-gap: 16px;
+    }
+
+    .additional__item {
+        width: 284px;
+    }
+
+    .additional__container-heading {
+        width: 248px;
+        font-size: 27px;
+        line-height: 29px;
+        margin-top: 10px;
+    }
+    
+    .additional__item_buhta > .additional__container-heading {
+        width: 248px;
+        word-break: normal;
+    }
+
+    .additional__item_buhta > .additional__container-heading > span::before {
+        content: '\200C';
+    }
+
+    .additional__container-text {
+        width: 248px;
+    }
+    .additional__item_shikhan > .additional__container-text {
+        width: 248px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279) {
+    .additional__item_buhta > .additional__container-heading {
+        width: 202px;
+        word-break: break-all;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .additional {
+        margin: 105px auto 0 auto;
+    }
+
+    .additional__title {
+        width: 512px;
+        height: 56px;
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    .additional__subtitle {
+        width: 640px;
+        height: 23px;
+        font-size: 24px;
+        line-height: 34px;
+        margin: 20px auto 0;
+    }
+
+    .additional__container {
+        width: 584px;
+        height: 676px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 16px;
+        margin: 56px auto 0;
+    }
+
+    .additional__container-heading {
+        width: 248px;
+        height: 55px;
+        font-size: 27px;
+        line-height: 29px;
+    }
+    
+    .additional__container-text {
+        width: 248px;
+        /* height: 55px; */
+    }
+
+    .additional__item_shikhan > .additional__container-text {
+        width: 248px;
+    }
+
+    .additional__item {
+        width: calc((100vw - 2*92px - 24px)/2);
+        height: 330px;
+    }
+
+    .additional__item_buhta > .additional__container-heading > span::before {
+        content: '';
+    }
+
+    .additional__container-text {
+        bottom: 25px;
+    }
+
+}   
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .additional {
+        margin: 68px auto 0 auto;
+    }
+
+    .additional__title {
+        width: 284px;
+        height: 40px;
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .additional__subtitle {
+        width: 284px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 12px auto 0;
+    }
+
+    .additional__container {
+        width: 284px;
+        height: 1392px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 24px;
+        margin: 48px auto 0;
+    }
+
+    .additional__container-heading {
+        width: 220px;
+        height: 55px;
+        font-size: 24px;
+        line-height: 26px;
+    }
+    
+    .additional__container-text {
+        width: 248px;
+        bottom: 25px;
+    }
+
+    .additional__item {
+        width: calc(100vw - 2*46px);
+        height: 330px;
+    }
+
+    .additional__item_buhta > .additional__container-heading > span::before {
+        content: '';
+    }
+    
+    .additional__item_shikhan > .additional__container-text {
+        width: 235px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 374px) {
+    .additional {
+        margin: 64px auto 0 auto;
+    }
+    
+    .additional__container {
+        height: 1392px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 24px;
+        margin: 48px auto 0;    
+    }
+    
+    .additional__title {
+        width: 280px;
+        height: 40px;
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .additional__subtitle {
+        width: 288px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 16px auto 0 auto;
+    }
+
+    .additional__container-heading {
+        width: 243px;
+        height: 55px;
+        font-size: 24px;
+        line-height: 26px;
+    }
+    
+    .additional__container-text {
+        width: 248px;
+        bottom: 25px;
+    }
+
+    .additional__item {
+        width: calc(100vw - 2*16px);
+        height: 330px;
+    }
+    
+    .additional__item_buhta > .additional__container-heading {
+        width: 248px;
+        word-break: normal;
+    }
+    
+    .additional__item_buhta > .additional__container-heading > span::before {
+        content: '';
+    }
+
+    .additional__item_shikhan > .additional__container-text {
+        width: 248px;
+    }
+
+}
+
+

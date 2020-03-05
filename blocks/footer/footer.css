@@ -1,0 +1,133 @@
+.footer{
+    width: calc(100vw - 2*48px); /* ширина динамическая, с учетом отступов по 48px*/ 
+    height: 23px;
+    position: relative;
+    margin: 0px auto 0;
+
+}
+
+.footer__link {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 40px;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer__copyright {
+    width: 282px;
+    height: 13px;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+@media screen and  (min-width: 1280px) { /* начиная с 1280px ширина футера = 1184px*/
+    .footer {
+        width: 1184px;
+        margin-top: 160px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer{
+        width: calc(100vw - 2*24px);
+        position: relative;
+        margin: 104px auto 24px auto;
+    }
+    
+    .footer__link {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 27px;
+        margin-left: 0;
+        margin-right: 19px;
+        height: 23px;
+    }
+    
+    .footer a {
+        text-decoration: none;
+    }
+    
+    .footer__copyright {
+        width: 282px;
+        height: 13px;
+        position: absolute;
+        bottom: 8px;
+        right: 0;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: right;
+        vertical-align: bottom;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .footer{
+        width: 282px;
+        height: 304px;
+        position: relative;
+        margin: 40px auto 24px 16px;
+    }
+    
+    .footer__link {
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        line-height: 40px;
+        margin-left: 0;
+        margin-bottom: 15px;
+        /* height: 23px; */
+    }
+        
+    .footer__copyright {
+        width: 282px;
+        height: 13px;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        vertical-align: bottom;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .footer{
+        width: calc(100vw - 2*16px);
+        height: 304px;
+        position: relative;
+        margin: 58px auto 24px auto;
+    }
+    
+    .footer__link {
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        line-height: 40px;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+        
+    .footer__copyright {
+        width: 282px;
+        height: 13px;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        vertical-align: bottom;
+    }
+}

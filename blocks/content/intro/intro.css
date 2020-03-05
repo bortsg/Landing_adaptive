@@ -1,0 +1,247 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: calc(100vw - 2*48px);
+    margin: 80px auto 0 auto;
+}
+
+.intro__content-row {
+    display: inline-block;
+    vertical-align: text-top;
+    margin-bottom: 0;
+}
+
+.intro__content-row_main-text {
+    width: 692px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 23px;
+    margin-top: 20px;
+}
+
+.intro__content-row_about-text {
+    margin-left: 12px;
+    font-size: 10px;
+    line-height: 16px;
+    margin-top: 20px;
+}
+
+.intro__span-bold {
+    font-weight: bold; 
+}
+
+ul {
+    padding-left: 0;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+li {
+    list-style-type: none;    
+}
+
+.intro__text {
+    margin: 35px auto 0 0;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.intro__title {
+    font-size: 54px;
+    line-height: 58px;
+    width: 782px;    
+    font-weight: bold;
+    text-align: left;
+    margin: 0 auto 0 0;   
+}
+
+.intro__subtitle {
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: normal;
+    text-align: left;
+    margin: 35px auto 0 0;
+}
+
+@media screen and (min-width: 1280px) {
+    .intro {
+        width: 984px;
+        height: 437px;
+    }
+    
+    .intro__content-row_main-text {
+        width: 682px;
+    }
+
+    .intro__text {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .intro{
+        width: 720px;
+        height: 485px;
+        margin-top: 80px;
+    }
+
+    .intro__title {
+        width: 720px;
+        height: 52px;
+        font-size: 54px;
+        line-height: 59px;
+        /* margin: 0 auto 0 0;    */
+    }
+
+    .intro__subtitle {
+        width: 720px;
+        height: 23px;
+        font-size: 24px;
+        line-height: 38px;
+        margin-top: 40px;
+    }
+
+    .intro__content-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro__content-row_about-text {
+        order: -1;
+        width: 720px;
+        height: 25px;
+        font-size: 10px;
+        line-height: 16px;
+        margin-left: 0;
+        margin-top: 19px;
+    }
+
+    .intro__content-row_main-text {
+        width: 720px;
+        height: 154px;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 39px;
+    }
+
+    .intro__text {
+        width: 720px;
+        height: 93px;
+        font-size: 13px;
+        line-height: 20px;
+        margin: 35px auto 0;
+    }
+
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .intro{
+        width: 343px;
+        height: 831px;
+        margin-top: 64px;
+    }
+
+    .intro__title {
+        width: 343px;
+        height: 72px;
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .intro__subtitle {
+        width: 343px;
+        height: 57px;
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 20px;
+    }
+
+    .intro__content-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro__content-row_about-text {
+        order: -1;
+        width: 343px;
+        height: 32px;
+        font-size: 10px;
+        line-height: 16px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .intro__content-row_main-text {
+        width: 340px;
+        height: 464px;
+        font-size: 16px;
+        line-height: 27px;
+        margin-top: 32px;
+    }
+
+    .intro__text {
+        width: 343px;
+        height: 96px;
+        font-size: 12px;
+        line-height: 19px;
+        margin: 32px auto 0;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .intro{
+        width: 288px;
+        height: 1055px;
+        margin-top: 67px;
+    }
+
+    .intro__title {
+        width: 288px;
+        height: 81px;
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .intro__subtitle {
+        width: 288px;
+        height: 72px;
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 14px;
+    }
+
+    .intro__content-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro__content-row_about-text {
+        order: -1;
+        width: 288px;
+        height: 32px;
+        font-size: 10px;
+        line-height: 16px;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .intro__content-row_main-text {
+        width: 288px;
+        height: 704px;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 24px;
+    }
+
+    .intro__text {
+        margin: 24px auto 0;
+        width: 288px;
+        height: 96px;
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+}
