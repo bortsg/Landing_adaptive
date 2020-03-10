@@ -45,15 +45,15 @@
 }
 
 .comments__image_first {
-    background-image: url('../../../images/__comments1.jpg');
+    background-image: url('../../../images/comments1.jpg');
 }
 
 .comments__image_second {
-    background-image: url('../../../images/__comments2.jpg');
+    background-image: url('../../../images/comments2.jpg');
 }
 
 .comments__image_third {
-    background-image: url('../../../images/__comments3.jpg');
+    background-image: url('../../../images/comments3.jpg');
 }
 
 .comments__quote {
