@@ -50,11 +50,11 @@
 }
 
 .video__wrapper_kamchatka {
-    background-image: url(../../../images/__video1.jpg);   
+    background-image: url(../../../images/video1.jpg);   
 }
 
 .video__wrapper_observatory {
-    background-image: url(../../../images/__video2.jpg);
+    background-image: url(../../../images/video2.jpg);
 }
 
 .video__wrapper:hover {
